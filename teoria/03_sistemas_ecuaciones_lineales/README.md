@@ -95,15 +95,13 @@ Para resolver el sistema de ecuaciones se pueden seguir tres pasos.
 
 - Escribir la matriz aumentada del sistema de ecuaciones lineales: La matriz aumentada combina la matriz de coeficientes con el vector de constantes. Para un sistema de ecuaciones lineales, la matriz aumentada tiene la forma:
 
-
-|| | | |  ||
-|---------------|---------------|-----|---------------|---------------|---------------|
-| a<sub>11</sub> | a<sub>12</sub> | ... | a<sub>1n</sub> ||  b<sub>1</sub> |
-| a<sub>21</sub> | a<sub>22</sub> | ... | a<sub>2n</sub> ||  b<sub>2</sub> |
-| ...           | ...           | ... | ...           | | ...           |
-| a<sub>m1</sub> | a<sub>m2</sub> | ... | a<sub>mn</sub> | | b<sub>m</sub> |
-|| | | |  |
-
+```
+    [a11 a12 ... a1n | b1  ]
+X = [a21 a22 ... a2n | b2  ]
+    [... ... ... ... | ... ]
+    [am1 am2 ... amn | ... ]
+```
+                           
 - Usar operaciones para llevar la matriz aumentada a una forma escalonada. Se pueden usar las operaciones elementales:
 
   - Intercambiar filas: Para poner un coeficiente no nulo en la posición principal.
@@ -119,27 +117,24 @@ Considere el siguiente sistema de ecuaciones:
 4x - y = 5
 
 ##### Matriz aumentada
-
-|  |  | | |
-|---------------|---------------|---|---------------|
-| 2 | 3 |  | 13 |
-| 4 | -1 |  | 5 |
-|  |  | | |
+```
+X =[2  3| 13]
+   [4 -1|  5]
+```
 
 ##### Transformación a Forma Escalonada
 Se resta 2 veces la primera fila a la segunda fila para obtener un cero en la posición [2,1]
 
-|  |  | | |
-|---------------|---------------|---|---------------|
-| 2 | 3 |  | 13 |
-| 4-(2*2) | -1-(3*2) |  | 5-(2*13) |
-|  |  | | |
 
-|  |  | | |
-|---------------|---------------|---|---------------|
-| 2 | 3 |  | 13 |
-| 0 | -7 |  | -21 |
-|  |  | | |
+```
+X =[2               3|        13]
+   [4-(2*2)  -1-(3*2)|  5-(2*13)]
+```
+
+```
+X =[2  3|   13]
+   [0 -7|  -21]
+```
 
 ##### Transformación a Forma Escalonada
 Se resuelve -7y = -21, se obtiene y = 3.
