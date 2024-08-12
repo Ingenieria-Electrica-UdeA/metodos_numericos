@@ -61,6 +61,7 @@ plt.ylabel('seno (x),coseno(x)')
 plt.legend(["seno (x)","coseno (x)"])
 plt.grid(True)
 ```
+<img src="https://github.com/Ingenieria-Electrica-UdeA/banco_imagenes/blob/main/presentaciones/funciones_seno_coseno.png" style="max-width: 100%;" alt="Funciones seno y coseno">
 
 Para hacer ambas funciones en gráficas separadas se utiliza plt.show()
 
@@ -81,7 +82,7 @@ plt.show()
 ```
 
 
-<img src="https://github.com/Ingenieria-Electrica-UdeA/banco_imagenes/blob/main/presentaciones/funciones_seno_coseno.png" style="max-width: 100%;" alt="Funciones seno y coseno">
+
 
 En este caso se grafican la función seno y coseno ya que su rango y dominio son iguales, si las graficamos junto a la función tangente habría que hacer ajustes adicionales ya que la función tangente tiene asíntotas y en su eje y tiene valores más altos que seno y coseno, en la gráfica no se observan bien estas funciones y es porque su valor más alto en y es igual a 1.
 
